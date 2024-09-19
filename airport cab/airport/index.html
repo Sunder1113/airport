@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+
+  </head>
+  <body> 
+    <div class="container border">
+      <div class="header">
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex">
+              <button class="btn">Book</button>
+              <span class="airport">Airport Cab</span>
+            </div>
+            <h2 class="header_heading">Booking Recived</h2>
+            <p>
+              We will share the driver details <br />30 min prior to the pickup
+              time
+            </p>
+          </div>
+          <div class="col-6 justify-content">
+            <div class="text_align position_relative">
+              <img
+                style="max-width: 200px"
+                src="./images/Audi-A6-271220221600.jpg"
+                alt="car" />
+              <p class="carName">Sadan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h2 style="margin-bottom: 15px;">Thank you for Booking a Ride</h2>
+        <h2 style="margin-bottom: 20px;">Update your Locations</h2>
+      </div>
+
+      <div class="form-container">
+        <form class="form">
+          <input
+            class="input_box"
+            type="text"
+            placeholder="DELHI BANGALORE PACKAGE" />
+          <input
+            class="input_box"
+            type="text"
+            placeholder="ENTER DELHI PICK UP LOCATION" />
+          <input
+            class="input_box"
+            type="text"
+            placeholder="ENTER BANGALORE DROP LOCATION" />
+          <div>
+            <label for="departure">DEPARTURE</label> : <span style="font-weight: 600;">Ride</span>
+            <div class="d-flex">
+              <input
+                class="input_departure_left"
+                type="date"
+                id="departure"
+                placeholder="DELHI BANGALORE PACKAGE" />
+              <input
+                class="input_departure_right"
+                type="time" 
+                placeholder="Demo time"/>
+            </div>
+          </div>
+          <div>
+            <label for="departure">ARRIVAL</label> : <span style="font-weight: 600;">Ride</span>
+            <div class="d-flex">
+              <input
+                class="input_departure_left"
+                type="date"
+                id="departure"
+                placeholder="DELHI BANGALORE PACKAGE" />
+              <input
+                class="input_departure_right"
+                type="time" 
+                placeholder="Demo time"/>
+            </div>
+          </div>
+       <div class="d-flex justify-content">
+        <button class="submit-btn" type="button" id="submit" onclick="showAlert()">SUBMIT</button>
+       </div>
+        </form>
+      </div>
+
+      <div class="footer">
+        <p style="margin-bottom: 15px;">
+          Alternatively, you can mail us at
+          <a href="mailto:care@bookairportcab.com">care@bookairportcab.com</a>
+          or call at <a href="tel:08046800969">080-46800969</a>
+        </p>
+        <div class="footer_box">
+            <p style="margin-top: 10px; margin-bottom: 10px;">Our Service Promise</p>
+        <p>
+          We are committed to providing our customers with the best airport ride
+          experience. If you need any assistance at the airport, do not hesitate
+          to share with our executives.
+        </p>
+        <p style="margin-top: 20px; margin-bottom: 10px;"><i style="font-weight: 600;">Wish you a very Happy Journey!</i></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
